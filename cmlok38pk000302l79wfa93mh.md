@@ -70,7 +70,7 @@ export function HeroHeading() {
 }
 ```
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:460px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:420px;border:0"></iframe>
 
 ## Interactive Playground
 
@@ -78,7 +78,7 @@ I believe the best way to understand a tool is to break it. Below is a live play
 
 You can tweak the **intensity**, **blur**, and **offset,** etc., to see how the shadow layers interact. This playground uses the `useShine` hook under the hood to give you full control over the rendering logic.
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-playground-demo-react?embed=1&file=src%2FApp.tsx&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:980px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-playground-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:960px;border:0"></iframe>
 
 ```javascript
 "use client";
