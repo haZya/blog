@@ -70,7 +70,7 @@ export function HeroHeading() {
 }
 ```
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview&amp;ctl=1" style="width:100%;height:460px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:460px;border:0"></iframe>
 
 ## Interactive Playground
 
