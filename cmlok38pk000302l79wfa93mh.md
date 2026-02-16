@@ -72,8 +72,6 @@ export function HeroHeading() {
 
 <iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:460px;border:0"></iframe>
 
-<iframe src="https://stackblitz.com/edit/hazya-shinejs-examples-e2v9gjl3?embed=1&amp;file=src%2FApp.tsx&amp;view=preview" style="width:100%;height:460px;border:0"></iframe>
-
 ## Interactive Playground
 
 I believe the best way to understand a tool is to break it. Below is a live playground that showcases the ShineJS options.
