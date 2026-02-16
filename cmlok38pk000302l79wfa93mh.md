@@ -4,6 +4,7 @@ datePublished: Mon Feb 16 2026 02:29:30 GMT+0000 (Coordinated Universal Time)
 cuid: cmlok38pk000302l79wfa93mh
 slug: elevate-your-ui-with-dynamic-text-shadows-in-react-with-shinejs
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1771207393967/752f45cb-1dca-4ff3-88f5-ead2df62058f.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1771269574331/81055573-3442-439b-bb1a-c7c4dac3f857.png
 tags: reactjs, neumorphism, shinejs, text-shadow
 
 ---
@@ -70,7 +71,7 @@ export function HeroHeading() {
 }
 ```
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:420px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:400px;border:0"></iframe>
 
 ## Interactive Playground
 
@@ -78,7 +79,7 @@ I believe the best way to understand a tool is to break it. Below is a live play
 
 You can tweak the **intensity**, **blur**, and **offset,** etc., to see how the shadow layers interact. This playground uses the `useShine` hook under the hood to give you full control over the rendering logic.
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-playground-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:960px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-playground-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:950px;border:0"></iframe>
 
 ```javascript
 "use client";
@@ -127,7 +128,7 @@ One of the strengths of ShineJS is its adaptability. Because it works with stand
 
 In this next example, you can see how the effect maintains its integrity across different font families and languages. Whether it's bold Sans-Serif or elegant Serif, the shadows wrap perfectly around every glyph.
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-typography-demo-react?embed=1&file=src%2FApp.tsx&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:780px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-typography-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:740px;border:0"></iframe>
 
 ```javascript
 "use client";
