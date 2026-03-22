@@ -93,7 +93,7 @@ Here, the producer in Account A explicitly creates the subscription to the remot
 
 ### Creating a Subscription for the Remote SQS Queue
 
-Instead of allowing the consumers to initiate the subscriptions, the topic owner create and manage the subscriptions to the consumers.
+Instead of allowing the consumers to initiate the subscriptions, the topic owner creates and manages the subscriptions for the consumers.
 
 **CDK Implementation (Account A):**
 
