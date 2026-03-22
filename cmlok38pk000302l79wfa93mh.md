@@ -1,6 +1,6 @@
 ---
 title: "Elevate Your UI with Dynamic Text Shadows in React with ShineJS"
-datePublished: Mon Feb 16 2026 02:29:30 GMT+0000 (Coordinated Universal Time)
+datePublished: 2026-02-16T02:29:30.969Z
 cuid: cmlok38pk000302l79wfa93mh
 slug: elevate-your-ui-with-dynamic-text-shadows-in-react-with-shinejs
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1771207393967/752f45cb-1dca-4ff3-88f5-ead2df62058f.png
