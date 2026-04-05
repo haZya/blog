@@ -49,7 +49,7 @@ At a high level, the service follows a strict security-first workflow:
 
 This design ensures a clean separation between ingestion, security, orchestration, and real-time communication.
 
-![Step Functions Graph.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/1469b745-c90e-458e-a5fd-233de9bf17c3.png align="center")
+![Step Functions Graph.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/a3dfdac1-f4ec-42d2-8e5b-6467a335fd96.png align="center")
 
 ## Architecture Overview
 
@@ -142,7 +142,7 @@ There are a few good ideas packed into this:
 
 > **Pro Tip:** While this setup enforces TLS and private access, you should consider adding `BucketEncryption.KMS` for defense-in-depth and granular auditing in production environments.
 
-A production-oriented version with KMS key could look more like this:
+A production-oriented version with a KMS key could look more like this:
 
 ```ts
 const key = new kms.Key(this, "UploadsKey", {
@@ -303,7 +303,7 @@ The `lambda/upload/register-upload.ts` handler calls `HeadObject`, reads metadat
 
 ## Orchestration: Step Functions Express Workflow
 
-This is the "brain" of the system. The the actual architectural center of the repo which manages the complex branching logic of the pipeline:
+This is the "brain" of the system. The actual architectural center of the repo, which manages the complex branching logic of the pipeline:
 
 **Security Check:** If GuardDuty finds a threat, delete the file and fail. **Deep Validation:** Use file-type to inspect the "magic numbers" of the file, ignoring spoofed MIME headers. **Parallel Processing:** Transform images (using `sharp`) and delete the staging file simultaneously.
 
@@ -327,7 +327,7 @@ We use Express Workflows with `StateMachineType.EXPRESS` for this orchestration 
     
 *   `add-metadata.ts` - persists final key, dimensions, and formats.
     
-*   `update-status.ts` - marks the upload successful or failed and updates relation state.
+*   `update-status.ts` - marks the upload successful or failed and updates the relation state.
     
 *   `cleanup-replaced-upload.ts` - deletes the previous file version if the relation now points elsewhere.
     
@@ -384,7 +384,7 @@ const stateMachine = new StateMachine(this, "FileUploadStateMachine", {
 
 There are a few design choices here worth highlighting.
 
-First, the workflow branches early on security outcome. That means a malware-positive file never reaches the rest of the processing path.
+First, the workflow branches early on the security outcome. That means a malware-positive file never reaches the rest of the processing path.
 
 Second, image transformation and staging-object deletion run inside a `Parallel` state:
 
@@ -597,7 +597,7 @@ Internal event bus
 
 ### Step Functions Graph for a Successful File Upload.
 
-![Step Functions success graph.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/846bcdd2-257d-4750-b6ac-636c91618909.png align="center")
+![Step Functions success graph.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/9fd624b7-8f1a-4058-81f0-9a3703420688.png align="center")
 
 ### WebSocket Notification for a Successful File Upload
 
@@ -675,7 +675,6 @@ As your organization grows, consumers of your file-processing events may live in
 
 *   Replace mock authorizers with robust JWT/OIDC verification.
     
-
 *   Implement customer-managed KMS keys for encryption at rest (S3 & DynamoDB).
     
 *   Protected CloudFront distribution by associating it with a web ACL that includes AWS WAF managed rules and IP-based rate limiting.
