@@ -274,7 +274,7 @@ cfnTaskDefinition.volumes = [
 
 Once deployed, the runtime model is straightforward:
 
-![End-to-end request flow for WordPress App on AWS ECS Fargate with Amazon S3 Files.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/00cfc39b-cbf8-46d1-9e19-924b47eed6b1.png align="center")
+![End-to-end request flow for WordPress App on AWS ECS Fargate with Amazon S3 Files.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/532a58b8-70d6-47c3-b235-4170113aefd5.png align="center")
 
 1.  A request hits the Application Load Balancer.
     
@@ -314,9 +314,9 @@ Instead, you can preserve the existing runtime assumptions:
 *   The durable backing store is S3.
     
 
-> **Practical Note:** Because S3 Files uses an EFS-backed cache, writes are available to other tasks almost instantly. However, the background synchronization to the S3 bucket itself can take 30 to 60 seconds. If you're checking the S3 console for your files immediately after an upload, don't panic if they don't show up right away!
-
 That last point is especially appealing because S3 has operational advantages people already know how to use: lifecycle policies, replication strategies, inventory, access controls, and long-term storage economics.
+
+> **Practical Note:** Because S3 Files uses an EFS-backed cache, writes are available to other tasks almost instantly. However, the background synchronization to the S3 bucket itself can take 30 to 60 seconds. If you're checking the S3 console for your files immediately after an upload, don't panic if they don't show up right away!
 
 ## How Does It Compare?
 
