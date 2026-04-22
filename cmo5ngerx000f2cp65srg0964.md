@@ -324,7 +324,7 @@ When deciding how to handle WordPress storage, you generally have three paths:
 
 ### 1\. Amazon S3 Files (The New Way)
 
-*   **Pros:** Near-infinite storage of S3, lower cost than high-performance EFS tiers, and easier data management (it's just a bucket!).
+*   **Pros:** Near-infinite storage of S3, **up to 90% lower cost compared to EFS**, and easier data management (it's just a bucket!).
     
 *   **Cons:** Currently requires lower-level configuration (L1 constructs) in CDK.
     
