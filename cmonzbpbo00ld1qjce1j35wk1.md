@@ -28,7 +28,11 @@ Today, even a junior developer can fire up a Claude code session and ask for a s
 
 ## The Literalism of AI Agents
 
-AI models are incredibly literal. Fundamentally, they are token-crunching machines that simply want to find the next best word. The AI agents are an extension of that; simply put, *they want to get the job done,* sometimes taking the *lazy* way out in doing so. They rarely push back on the "means". What you ask is what you get. That sounds like a good thing, but it means that if you ask for a specific implementation, they will happily provide it, even if it involves janky hacks, complex regex, or conditional pattern matching that a human would immediately flag as a red flag.
+AI agents are remarkably literal. Because many models are tuned for precision—often with low `Temperature` and `TopP` settings, they tend to follow instructions to the letter while missing the obvious context. A model capable of identifying a zero-day vulnerability in a large codebase might still fail a basic logic test. The infamous "Car Wash Test" where you ask a state-of-the-art model like Claude Opus 4.7, "The car wash is only 50m away; should I walk or drive?" it will logically conclude you should walk, completely missing the point that you're likely taking a car to be washed.
+
+![Claude Opus 4.7 car wash test failure.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/9b3864da-7b26-458c-8f43-aa3537a541b6.webp align="center")
+
+Fundamentally, these models are token-crunching machines that are really good at finding the next best word. The AI agents are an extension of that; simply put, *they want to get the job done,* sometimes taking the *lazy* way out in doing so. They rarely push back on the "means". What you ask is what you get. That sounds like a good thing, but it means that if you ask for a specific implementation, they will happily provide it, even if it involves janky hacks, complex regex, or conditional pattern matching that a human would immediately flag as a red flag.
 
 If you read the "thinking" monologues of these agents, it'll crack you up sometimes seeing them realize a request is suboptimal or even straight up "stupid," yet they proceed anyway because that was the instruction. Left to their own devices, an agent might consider forking Chromium to fix your React button if it thinks that's the most direct path to the goal you've given it.
 
