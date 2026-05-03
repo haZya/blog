@@ -55,7 +55,7 @@ We have been seeing the consequences in the open-source world for quite some tim
 
 As **Andrej Karpathy** puts it,
 
-> **Agentic Engineering** is about preserving the quality bar of what existed before in professional software while improving productivity. You're still responsible for your software just as before.
+> **Agentic Engineering** is about improving productivity while preserving the quality bar of what existed before in professional software. You're still responsible for your software just as before.
 
 To keep your codebase from becoming a collection of "vibes," consider these practices to maintain the quality bar without adding to technical debt:
 
