@@ -28,7 +28,7 @@ Today, even a junior developer can fire up a Claude code session and ask for a s
 
 ## The Literalism of AI Agents
 
-AI agents are remarkably literal. Because many models are tuned for precision—often with low `Temperature` and `TopP` settings, they tend to follow instructions to the letter while missing the obvious context. A model capable of identifying a zero-day vulnerability in a large codebase might still fail a basic logic test. The infamous "Car Wash Test" where you ask a state-of-the-art model like Claude Opus 4.7, "The car wash is only 50m away; should I walk or drive?" it will logically conclude you should walk, completely missing the point that you're likely taking a car to be washed.
+AI agents are remarkably literal. Because many models are tuned for precision, often with low `Temperature` and `TopP` settings, they tend to follow instructions to the letter while missing the obvious context. A model capable of identifying a zero-day vulnerability in a large codebase might still fail a basic logic test. The infamous "Car Wash Test" where you ask a state-of-the-art model like Claude Opus 4.7, "The car wash is only 50m away; should I walk or drive?" it will logically conclude you should walk, completely missing the point that you're likely taking a car to be washed.
 
 ![Claude Opus 4.7 car wash test failure.](https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/9b3864da-7b26-458c-8f43-aa3537a541b6.webp align="center")
 
