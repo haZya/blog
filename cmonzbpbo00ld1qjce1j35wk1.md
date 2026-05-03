@@ -2,7 +2,7 @@
 title: "When AI-Written Code Becomes the Death of Deep Understanding"
 datePublished: 2026-05-02T06:47:20.821Z
 cuid: cmonzbpbo00ld1qjce1j35wk1
-slug: when-ai-written-code-becomes-the-death-of-deep-understanding
+slug: the-vibe-review-trap-when-ai-written-code-becomes-the-death-of-deep-understanding
 cover: https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/1a765ee4-e357-497e-828d-e7118325de88.png
 tags: ai, technical-debt, code-review, software-engineering, agentic-engineering
 
