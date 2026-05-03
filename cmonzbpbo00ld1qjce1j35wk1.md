@@ -4,7 +4,7 @@ datePublished: 2026-05-02T06:47:20.821Z
 cuid: cmonzbpbo00ld1qjce1j35wk1
 slug: the-vibe-review-trap-when-ai-written-code-becomes-the-death-of-deep-understanding
 cover: https://cdn.hashnode.com/uploads/covers/698fb88f7d702cdd2e99a524/1a765ee4-e357-497e-828d-e7118325de88.png
-tags: ai, technical-debt, code-review, programming, software-engineering
+tags: ai, technical-debt, code-review, software-engineering, agentic-engineering
 
 ---
 
@@ -53,21 +53,29 @@ We have been seeing the consequences in the open-source world for quite some tim
 
 ## How to Avoid the Trap
 
-*   Require the author to explain the design, not just the diff.
+As **Andrej Karpathy** puts it,
+
+> **Agentic Engineering** is about preserving the quality bar of what existed before in professional software while improving productivity. You're still responsible for your software just as before.
+
+To keep your codebase from becoming a collection of "vibes," consider these practices to maintain the quality bar without adding to technical debt:
+
+*   **Demand Intentionality:** Require authors to explain the *design decisions*, not just describe the diff.
     
-*   Review for necessity: could this be less code?
+*   **Review for Necessity:** Always ask: "Could this problem be solved with less code?"
     
-*   Ask what architectural context the AI missed.
+*   **Seek Missing Context:** Identify the architectural constraints or shared utilities the AI might have missed.
     
-*   Treat AI-generated tests with suspicion if they merely validate the implementation.
+*   **Question the Tests:** Treat AI-generated tests with suspicion if they only mirror the implementation rather than challenging it.
     
-*   Make the human author responsible for owning the trade-offs.
+*   **Enforce Ownership:** Ensure the human author, not the agent, is ultimately responsible for every trade-off and side effect.
     
 
-## Conclusion: Understanding the "Why"
+## Conclusion: Beyond the Vibe
 
-If we continue to merge PRs that are black boxes to both the author and the reviewer, we will soon reach a point where no one understands how the system runs.
+If we continue to merge PRs that remain "black boxes" to both author and reviewer, we will eventually lose our collective understanding of how our systems actually work. "Tribal knowledge" will decay, and we’ll be left with a codebase no one truly owns.
 
-AI is a powerful co-pilot, but we cannot abdicate our responsibility as engineers. We must strive for less code, less complexity, and more understanding. Before you commit that AI-generated block, ask yourself: *Can I explain this, or am I just trusting the vibe?*
+AI is a powerful co-pilot, but it cannot replace the responsibility of an engineer. Our goal should always be less code, lower complexity, and deeper comprehension. Before you merge that AI-generated block, ask yourself: *Could I explain this to a colleague, or am I just trusting the vibe?*
 
-The real goal isn't to write code faster; it's to solve problems without creating major liabilities. Understanding *why* we do something is more important now than it ever has been.
+> You can outsource your thinking, but never your understanding.
+
+The true measure of a developer isn't how fast they can generate lines of code, it's how effectively they can solve problems without creating future liabilities. In the age of AI, understanding the "why" isn't just a best practice; it's our only defense against unmaintainable complexity.
