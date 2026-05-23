@@ -1,5 +1,5 @@
 ---
-title: "The Ultimate Multi-Account & Multi-Regional AWS Terraform Template"
+title: "The Ultimate Multi-Account & Multi-Regional AWS Terraform Landing Zone"
 datePublished: 2026-05-23T04:24:37.236Z
 cuid: cmphuh1ma00wz1smtfcjc7vn1
 slug: the-ultimate-multi-account-multi-regional-aws-terraform-template
