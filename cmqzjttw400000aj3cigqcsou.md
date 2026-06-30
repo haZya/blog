@@ -94,7 +94,7 @@ To enable communication across the peered regions:
 
 Another critical limitation of Transit Gateway peering is DNS resolution.
 
-> \[!IMPORTANT\] **Transit Gateway peering does not support resolving public or private IPv4 DNS hostnames to private IPv4 addresses** across VPCs on either side of the peering connection using Amazon Route 53 Resolver in another Region.
+> **Transit Gateway peering does not support resolving public or private IPv4 DNS hostnames to private IPv4 addresses** across VPCs on either side of the peering connection using Amazon Route 53 Resolver in another Region.
 > 
 > Private hosted zones (PHZs) can be associated with VPCs in multiple Regions, but TGW peering alone does not provide that DNS plumbing. If a `eu-west-1` VPC is not associated with the PHZ or configured to forward queries to the right resolver endpoint, instances there will not resolve those records simply because network routes exist.
 
