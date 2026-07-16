@@ -207,3 +207,7 @@ Building a hybrid cloud network requires balancing scalability, performance, and
     
 
 By planning for the static routing requirements of TGW peering, setting up PHZ associations or Route 53 Resolver endpoints for cross-region DNS, and implementing Layer 2/3 encryption on Direct Connect, you can build a resilient, secure hybrid cloud network ready for enterprise production workloads.
+
+### References
+
+[Building a Scalable and Secure Multi-VPC AWS Network Infrastructure](https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/welcome.html)
