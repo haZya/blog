@@ -21,11 +21,11 @@ In this article, I’ll show you how to get started with the core component and 
 
 It's particularly effective for:
 
-* **Neumorphism** aesthetics where soft, directional shadows define the UI.
+*   **Neumorphism** aesthetics where soft, directional shadows define the UI.
     
-* Hero sections that need a premium, interactive feel.
+*   Hero sections that need a premium, interactive feel.
     
-* Visualizing depth in typography-heavy designs.
+*   Visualizing depth in typography-heavy designs.
     
 
 ## Quick Start: The `<Shine />` Component
@@ -71,7 +71,7 @@ export function HeroHeading() {
 }
 ```
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:400px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-simple-demo-react?embed=1&file=src%2FApp.tsx&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:400px;border:0"></iframe>
 
 ## Interactive Playground
 
@@ -79,7 +79,7 @@ I believe the best way to understand a tool is to break it. Below is a live play
 
 You can tweak the **intensity**, **blur**, and **offset,** etc., to see how the shadow layers interact. This playground uses the `useShine` hook under the hood to give you full control over the rendering logic.
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-playground-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:950px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-playground-demo-react?embed=1&file=src%2FApp.tsx&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:950px;border:0"></iframe>
 
 ```javascript
 "use client";
@@ -115,11 +115,11 @@ export function PlaygroundStarter() {
 
 ### Things to Try:
 
-* **Shadow Color:** Change the `shadowRGB` to match your background for a true neumorphic look.
+*   **Shadow Color:** Change the `shadowRGB` to match your background for a true neumorphic look.
     
-* **Opacity Power:** Crank up the `opacityPow` to see how it affects the falloff of the shadow layers.
+*   **Opacity Power:** Crank up the `opacityPow` to see how it affects the falloff of the shadow layers.
     
-* **Light Position:** Switch from `followMouse` to a `fixed` point to simulate a static light source in your UI.
+*   **Light Position:** Switch from `followMouse` to a `fixed` point to simulate a static light source in your UI.
     
 
 ## Typography and Localization
@@ -128,7 +128,7 @@ One of the strengths of ShineJS is its adaptability. Because it works with stand
 
 In this next example, you can see how the effect maintains its integrity across different font families and languages. Whether it's bold Sans-Serif or elegant Serif, the shadows wrap perfectly around every glyph.
 
-<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-typography-demo-react?embed=1&amp;file=src%2FApp.tsx&amp;hideExplorer=1&amp;hideNavigation=1&amp;view=preview" style="width:100%;height:740px;border:0"></iframe>
+<iframe src="https://stackblitz.com/github/haZya/shinejs-examples/tree/main/shinejs-typography-demo-react?embed=1&file=src%2FApp.tsx&hideExplorer=1&hideNavigation=1&view=preview" style="width:100%;height:740px;border:0"></iframe>
 
 ```javascript
 "use client";
@@ -176,9 +176,6 @@ ShineJS is designed to be unobtrusive yet impactful. It doesn't require heavy ca
 
 If you're building a landing page or a creative portfolio, give `@hazya/shinejs` a try.
 
-* **Documentation:** [shinejs.vercel.app/docs](http://shinejs.vercel.app/docs)
+*   **Documentation:** [shinejs.vercel.app/docs](http://shinejs.vercel.app/docs)
     
-* **GitHub:** [haZya/shinejs](https://github.com/haZya/shinejs)
-    
-
-Happy coding!
+*   **GitHub:** [haZya/shinejs](https://github.com/haZya/shinejs)
